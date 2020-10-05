@@ -1,0 +1,149 @@
+#bmm {
+background-color: #000000;
+color: $white;
+padding: 20px 10px 20px 10px;
+display: block;
+position: relative;
+word-wrap: break-word;
+
+@media screen and (min-width: 40em) {
+
+	padding: 20px 40px 20px 40px;
+	min-height: 88vh;
+}
+
+html {
+	color: $white;
+}
+.reveal {
+	background-color: #000000 !important;
+
+	   &:focus {
+	    	outline: none;
+			outline-style: none;
+	    }
+	    .close-button {
+	    	color: $white;
+	    }
+	    .button {
+	    	background-color: $white;
+			color: #000000; 
+	
+		&:hover {
+			text-decoration: underline;
+		}
+	
+}
+}
+.button {
+	background-color: $white;
+	color: #000000; 
+
+		&:hover {
+			text-decoration: underline;
+		}	
+}
+.card {
+	background-color: #333333;
+	color: $white;
+	border: 1px solid $white;
+
+a {
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+}
+p {
+	color: $white;
+
+	a {
+		color: $white;
+	}
+}
+blockquote {
+	background-color: #000000;
+	color: $white;
+	border-left: none;
+	padding: .5625rem 1.25rem 0 0;
+	
+	p {
+		color: $white;
+	}
+	cite {
+		color: $white;
+	}
+}
+.accordion-content {
+	background-color: rgba(0,0,0, .88);
+}
+.accordion-title {
+	color: $white;
+	background-color: #000000;
+	text-decoration: none;
+
+	 p {
+	 	margin-bottom: 0;
+	 }
+}
+form {
+	label, .wpforms-field-label, .wpforms-field-label-inline {
+	color: $white !important;
+	}
+}
+ul {
+
+	li {
+		a {
+		  	color: $white;
+		  	text-decoration: underline;
+			
+			&:hover {
+				text-decoration: none;
+			}
+
+		}
+	}
+
+}
+footer {
+display: flex;
+align-items: start;
+justify-content: start; 
+flex-direction: column;
+margin-bottom: -100px;
+
+@media screen and (min-width: 40em) {
+position: absolute;
+bottom: 0;
+}
+.footer-container {
+align-items: start;
+
+.logo {
+	margin-left: 24px;
+	width: 187px;
+}
+ul {
+	margin-top: 10px;
+	margin-left: 25px;
+ 	list-style: none;
+ 	display: block;
+
+ 	li {
+ 		display: inline-block;
+
+ 		a {
+				color: $white;
+				
+ 		}
+ 	}
+ }
+
+}
+
+ 
+}
+
+}

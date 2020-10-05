@@ -1,0 +1,414 @@
+.popout-banner  {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100000;
+ @media screen and (min-width: 64em) { 
+   max-width: 300px;
+ }
+  .popout-icon {
+         text-transform: uppercase;
+         background-color: #9D233C;
+         -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+         box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+         margin-right: 10px;
+         margin-bottom: 80px;
+}
+
+
+ @media screen and (min-width: 64em) { 
+      left: 0;
+      bottom:0;
+    
+ }
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      right: 0;
+  }
+  .callout.alert {
+      width: 290px;
+      text-transform: uppercase;
+      background-color: $alert;
+  }
+  a {
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 2px;
+  padding: 10px 0;
+  color: $white; 
+  background-color: #9D233C;
+  display: block;
+  text-decoration: none !important;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 800;
+  &:hover {
+    text-decoration: underline !important;
+  }
+ 
+ }
+ .off-canvas.is-open {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    width: 500px;
+    padding: 30px;
+    max-width: 500px;
+}
+}
+
+.site-footer {
+  
+  background: $primary;
+  color: $white;
+  text-align: center;
+  
+  @media screen and (min-width: 40em) {
+     text-align: left;
+  }
+
+.top-footer {
+
+  padding: 40px;
+
+.footer-logo {
+  margin-bottom: 40px;
+
+ img {
+    display: block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 55px;
+    width: 200px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 40em) {
+
+        margin: 0;
+
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      
+       margin: 0 auto;
+
+    }
+
+  }
+ 
+}
+
+.footer-contacts {
+
+  padding-left: 0;
+
+h3,h4 {
+
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 800;
+             
+      @media screen and (min-width: 40em) {
+
+      text-align: left;
+
+      }
+
+     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+        text-align: center;
+      
+     }
+}
+
+p  {
+     text-align: center;
+     font-weight: $global-weight-normal;
+     
+    @media screen and (min-width: 40em) {
+      text-align: left;
+     }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      text-align: center;
+    }
+
+     a {
+      color: $white;
+      font-family: $body-font-family;
+     
+      &:hover {
+        text-decoration: underline;
+      }
+     }
+}
+
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+  font-family: $body-font-family;
+
+  &:hover{
+    color: $white;
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
+}
+
+.footer-content {
+
+.button-column {
+
+padding-left: 0;
+padding-right: 0;
+
+.button-group {
+
+  text-transform: uppercase;
+
+  .secondary {
+    background-color: #6a1b29;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
+  .primary {
+    background-color: #6a1b29;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
+}
+
+
+}
+
+}
+
+}
+
+.social {
+
+  .social-icons {
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+     
+    @media screen and (min-width: 40em) {
+
+      align-items: left;
+      justify-content: left;
+      margin: 10px auto 0 auto;
+      text-align: left;
+
+   }
+
+     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+         margin: 10px auto 0 auto;
+         justify-content: center;
+      
+     }
+
+    li {
+
+          a {
+                
+                cursor: pointer;
+                display: inline-block;
+                color: $white;           
+                padding: .6rem;
+
+                 @media screen and (min-width: 40em) {
+
+                  padding: 0 .3rem;
+
+                 }
+
+                span {
+                  
+                color: $white;
+                text-align: center; 
+                font-weight: normal;
+                font-size: 24px;
+                              
+                }
+
+                span:hover {
+                  
+                  color: $secondary;
+                
+                }
+
+                span.icon-text {
+                  
+                  display: block;
+                  text-indent: -99999px;
+                 
+                }
+            }
+        }
+      }
+  }
+}
+
+.site-footer-bottom {
+
+ background: $white;
+ padding: 20px 30px 20px 30px; 
+  
+  .bottom-footer-content {
+
+    .menu {
+
+      li {
+        a {
+          font-size: .85rem;
+          padding: .5rem 0;
+          line-height: 1.2rem;
+          font-weight: 100;
+          text-align: center;
+
+              @media screen and (min-width: 40em) {
+              
+                padding: 0 .4rem;
+
+              }
+        }
+      }
+    }
+
+  .menu .active > a, .menu .is-active > a {
+      background-color: $white;
+      color: $secondary;
+      text-decoration: underline;
+  }
+
+  .vccs {
+
+  @media screen and (min-width: 40em) {
+  padding-right: 0;
+  }
+
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  text-align: center;
+  }
+
+}
+
+.copywrite {
+ 
+      @media screen and (min-width: 40em) {
+
+        text-align: right;
+
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+        text-align: center;
+      
+      }
+
+}
+  p {
+   
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: $black;
+
+    @media screen and (min-width: 40em) {
+    text-align: right;
+    }
+
+   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    text-align: center;
+    line-height: inherit;
+  }
+
+}
+    a {
+      color: $primary;
+      font-weight: 700;
+    
+    &:hover  {
+      color: $secondary;
+    }
+    
+  }
+
+}
+
+.tips-logo {
+
+    background: url("../media/tipslogo-gray.png") no-repeat;
+    height: 40px;
+    width: 100px;
+    text-indent:-999px;
+    display: block;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  
+    @media screen and (min-width: 40em) {
+
+      align-items: left;
+      justify-content: left;
+      text-align: left;
+      margin: 1rem 0;
+    
+    }
+
+   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    
+    margin: 1rem auto;
+
+   }
+
+}
+
+}
+
+div.wpforms-container-full .wpforms-form input[type="submit"], div.wpforms-container-full .wpforms-form button[type="submit"], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+     background-color: $primary !important;
+    border: 1px solid $primary !important;
+    color: $white !important;
+    font-size: 1.2em !important;
+    padding: 10px 15px;
+}
+div.wpforms-container-full .wpforms-form input[type="submit"], div.wpforms-container-full .wpforms-form button[type="submit"], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    background-color: $primary !important;
+    border: 1px solid $primary !important;
+    color: $white !important;
+    font-size: 1.2em;
+    padding: 10px 15px;
+
+    &:hover {
+    background-color: $secondary !important;
+    border: 1px solid $secondary !important;
+    color: $white !important;
+    }
+}
+.reveal-overlay {
+  z-index: 1000000000 !important;
+}

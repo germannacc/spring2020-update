@@ -1,1 +1,1 @@
-# spring2020-update
+# GCC Online Students WordPress Theme

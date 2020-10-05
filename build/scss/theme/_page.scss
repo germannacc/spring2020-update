@@ -1,0 +1,286 @@
+.page-heading-image {
+  height: auto;
+  position: relative;
+  margin: 40px 0;
+  img {
+      height: auto;
+    width: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+  }
+}
+.page-404-container {
+  
+ display: flex;
+ text-align: center;
+ width: 100%;
+ height: 70vh;
+ justify-content: center;
+ align-items:center;
+
+}
+
+.content-area {
+	margin: 0;
+	padding: 0 1rem;
+}
+
+.entry-content {
+
+  dl, dt {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 10px;
+  }
+.image-background {
+ background-position: center center; 
+ background-repeat: no-repeat; 
+ background-size: cover;
+ -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+ padding: 0;
+ margin: 0 0 10px 0;
+ height: 300px; 
+ max-height: 300px;
+
+}
+.update-background {
+ background-position: center center; 
+ background-repeat: no-repeat; 
+ background-size: cover;
+ -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+ padding: 0;
+ margin: 0 0 10px 0;
+ height: auto; 
+ max-height: 320px;
+
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+}
+//Page Side bar
+.widget:first-of-type {
+  background-color: $white;
+}
+.widget {
+  margin-bottom: 1rem;
+
+  h3 {
+
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 0;
+    
+  a {
+    display: block;
+    padding: 0 1rem;
+  }
+
+}
+
+h3:first-of-type {
+  display: none;
+
+@media screen and (min-width: 64em) {
+
+    display: block;
+
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: .95rem;
+}
+
+.textwidget {
+  padding: 1rem;
+}
+
+}
+
+.department-links {
+  ul.vertical.menu {
+    margin: 0;
+    padding: 0;
+     list-style: none;
+  li {
+    a:link {
+        padding: 0.5rem 1rem;
+        font-weight: 400;
+        color: $dark-gray;
+        line-height: 1.4rem;
+      }
+
+    /* visited link */
+    a:visited {
+        color: $secondary;
+    background-color: $white;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+}
+
+li.active {
+  text-decoration: underline;
+}
+.active > a {
+  color: $black;
+  text-decoration: underline;
+}
+  }
+}
+
+.widget ul:nth-child(1).menu {
+   list-style: none;
+   
+li:last-child {
+  border-bottom: none;
+}
+
+li:last-child a,
+  li:last-child div {
+  border-bottom: none;
+}
+}
+.widget:first-of-type{
+  background-color: $white;
+}
+.widget {
+background-color: $light-gray;
+
+  ul {
+    
+    list-style: disc;
+    padding: 0;
+    
+    li {
+    
+      padding: .3rem 0;
+
+      a {
+
+        padding:0;
+        display: block;
+
+      /* mouse over link */
+      &:hover {
+        color: $secondary;
+      }
+
+      /* selected link */
+      &:focus {
+          color: $secondary;
+      }
+
+        }
+
+    }
+
+  .active > a {
+    color: $secondary;
+    background-color: $white;
+  }
+
+}
+  ul.menu {
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: block;
+      width: 100%; //do not remove
+      border-bottom: 1px solid $medium-gray;
+      padding: 0;
+
+      a {
+          padding: 1rem 1rem 1rem 1.4rem;
+          font-weight: bold;
+          color: $dark-gray;
+        }
+
+      /* visited link */
+      a:visited {
+         color: $secondary;
+         background-color: $white;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: $primary;
+      }
+
+ 
+
+      }
+
+  .active > a {
+    background-color: $white;
+    color: $secondary;
+  }
+
+}
+.social-icons {
+  margin: 0;
+  padding: 0;
+  li {
+  list-style: none;
+  width: auto;
+  display: inline-block;
+  a {
+        padding: 0.4rem 0.2rem;
+  span {
+  color: $primary;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid $primary;
+  border-radius: 100%;
+  text-align: center;
+}
+
+span:hover {
+  color: $dark-gray;
+  border: 1px solid $dark-gray;
+}
+  span.icon-text {
+      
+      display: block;
+      text-indent: -99999px;
+      display: none;
+
+ }
+      }
+    }
+  }
+
+}
+.entry-footer {
+ text-align: left; 
+ background-color: #f9f9f9; 
+ padding: .5rem 1.4rem;
+ p {
+  margin-bottom: 0; 
+  font-size: .95rem; 
+  color: #545454;
+  font-weight: 800;
+ }
+}

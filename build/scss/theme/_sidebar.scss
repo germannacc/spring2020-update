@@ -1,0 +1,183 @@
+//Branding and Main Navigation
+
+.nav-panel {
+  position: relative;
+}
+
+button.mobile-sidebar-button { 
+
+  background-color: $light-gray;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: $font-family-monospace;
+  color: $secondary;
+  font-weight: $global-weight-bold;
+
+  &:hover {
+    color: $secondary;
+    background-color: $light-gray;
+  }
+
+  &:focus {
+      color: $secondary;
+      background-color: $light-gray;
+  }
+
+  &::after {
+    content: '\f0c9 ';
+    font-family: FontAwesome;
+    line-height: inherit;
+    font-size: 1.6rem;
+    float: right;
+    color: $secondary;
+  }
+}
+
+@media screen and (min-width: 40em) {
+
+.branding {
+  background-color: $light-gray;
+  padding: 0;
+  max-width: 300px !important;
+  position: relative;
+  margin: 0;
+
+  .button-group {
+    padding: 0 .5rem 0 1rem;
+
+    a.button {
+      text-transform: uppercase;
+      padding: .5rem .3rem;
+      margin: .25rem 0;
+    }
+
+    a.button.alert {
+      text-transform: uppercase;
+      padding: .6rem .3rem .4rem .3rem;
+      margin: .25rem 0;
+    }
+  }
+
+}
+
+.custom-logo-link, .mobile-logo {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.custom-logo-link {
+    margin: 20px auto;
+    max-width: 170px;
+}
+
+.mobile-logo {
+  margin: .5rem;
+}
+#popout-menu {
+    background-color: $light-gray;
+    z-index: 99999;
+    overflow: visible;
+}
+#branding-menu,
+#menu-container
+{
+  //main sidebar styles
+  background-color: $light-gray;
+  //do not change these styles
+  overflow: visible;
+  position: absolute;
+  z-index: 99999;
+  
+
+  .gcc-main-nav {
+    //sidebar navigation styles
+    background-color: $light-gray;
+    position: relative;
+    //top menu
+    
+    li {
+      a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        line-height: inherit;
+        color: $primary;
+        cursor: pointer;
+        padding: 0.5rem 2.6rem 0.5rem 1rem;
+        font-weight: 800;
+        transition: all 0.25s ease-in;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        span {
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          font-size: 1.2rem;
+        }
+
+      }
+      a:hover {
+        background-color: $medium-gray;
+        color: $secondary;
+      }
+
+      a::selection {
+        //keeps top menu item highlighted when over pop out menu
+        background-color: $medium-gray;
+
+      }
+      //pop out menu
+      ul.nested {
+        width: 830px;
+        padding: 1rem;
+        background-color: $medium-gray;
+        top: -50px;
+        // left: 290px;
+
+        li {
+          //puts menu items into columns
+          width: 100% !important;
+          width: 36%;
+          max-width: 360px !important;
+          /*Adjust width of columnes*/
+          position: relative;
+          display: inline-block;
+          margin: 0 1rem;
+
+          a {
+            transition: all 0.25s ease-in;
+            border-bottom: 1px solid rgba(0,0,0, .2);
+            padding: 0.5rem;
+            color: $black;
+            text-transform: uppercase;
+          }
+
+          a:hover {
+            background-color: $light-gray;
+            color: $primary;
+          }
+
+          a::before {
+            font-family: 'FontAwesome';
+            content: "\f054";
+            left: 0;
+            padding-right: 0.8rem;
+            font-size: 0.5rem;
+          }
+        }
+      }
+
+      li:hover a {
+        //popout menu hover
+        background-color: $medium-gray;
+      }
+    }
+
+    li:hover a {
+      //top menu hover
+      background-color: $medium-gray;
+      color: $primary;
+    }
+  }
+}
+
+}
