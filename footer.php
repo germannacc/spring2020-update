@@ -35,7 +35,6 @@ if ($u_modified_time >= $u_time + 86400) { ?>
 <?php get_template_part('template-parts/content', 'top-footer'); ?>
 <?php get_template_part('template-parts/content', 'bottom-footer'); ?>
 </footer>
-
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
