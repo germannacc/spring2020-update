@@ -31,12 +31,9 @@ if ($u_modified_time >= $u_time + 86400) { ?>
   </footer>
 </div>
 <?php }; ?>
-
 <footer class="site-footer hide-for-print">
-
 <?php get_template_part('template-parts/content', 'top-footer'); ?>
 <?php get_template_part('template-parts/content', 'bottom-footer'); ?>
-
 </footer>
 
 <?php
